@@ -1,0 +1,60 @@
+@font-face {
+    font-family:Inter;
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+*{
+    font-family:Inter;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div{
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    background-color: #553939;
+    color: white;
+    width: 20%;
+    padding: 20px;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+}
+input, button{
+    background-color: #805858;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+input{
+    width: 90%;
+    border-radius: 5px;
+}
+button{
+    font-size: 14pt;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 10px;
+}
+button:hover{
+    cursor: pointer;
+}
+p{
+ display:none;
+}
+@media (max-width: 1024px){
+    div{
+        width:40%;
+    }
+}
+@media (max-width: 480px){
+    div{
+        width:60%;
+    }
+}
