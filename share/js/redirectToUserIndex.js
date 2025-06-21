@@ -1,1 +1,1 @@
-window.location = '/user/index.html';
+window.location = 'user/index.html';
