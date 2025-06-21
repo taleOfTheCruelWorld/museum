@@ -1,1 +1,1 @@
-window.location = '/museum/user/index.html';
+window.location = '/user/index.html';
