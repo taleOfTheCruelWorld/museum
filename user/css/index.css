@@ -5,11 +5,12 @@
     --form-bgc: #553939;
     --input-bgc: #805858;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
     background-color: var(--body-bgc);
 }
 
