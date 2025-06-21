@@ -1,4 +1,326 @@
-body{
+:root {
+    --nav-element-color: #D9D9D9;
+    --nav-bgc: #222222;
+    --body-bgc: #EDEEF0;
+    --form-bgc: #553939;
+    --input-bgc: #805858;
+}
+
+body {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+    background-color: var(--body-bgc);
+}
+
+main {
+    padding: 0px 10%;
+}
+
+.slider {
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.slide span {
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    color: var(--nav-element-color);
+    right: 13%;
+    top: 15%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+@media screen and (width < 600px) {
+    .slide span {
+        right: 0;
+        left: 0;
+        bottom: 20%;
+        font-size: 1.5rem;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+p.about {
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.infografica {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.infografica h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.infografica img {
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.divisions {
+    margin-top: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.divisions .division {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+    max-width: 400px;
+    max-height: 300px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    transition: .4s;
+}
+
+.divisions .division:hover {
+max-width: 420px;
+}
+
+.divisions .division img {
+    width: 100%;
+    max-height: 250px;
+}
+
+.divisions .division .title {
+    font-size: 1.250rem;
+    text-align: center;
+}
+
+.chronics {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 30px;
+}
+
+.chronics img {
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.chronics .years {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 70%;
+    border-bottom: 2px solid black;
+}
+
+.chronics .years .year {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -6px;
+}
+
+.chronics .years .year a {
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.chronics .years .year .dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.literature {
+    margin-top: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+.maps {
+    display: block;
+    margin: 150px auto;
+    position: relative;
+    width: fit-content;
+}
+
+.maps img {
+    max-width: 100%;
+    max-height: 500px;
+    filter: blur(3px);
+}
+
+.maps h2 {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: var(--nav-element-color);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 6px;
+    border-radius: 12px;
+}
+
+footer {
+    background-color: var(--nav-bgc);
+    padding: 70px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+footer .suggestion {
+    padding: 40px;
+    background-color: var(--form-bgc);
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-div {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+footer .suggestion .input-div textarea {
+    background-color: var(--input-bgc);
+    resize: none;
+    height: 200px;
+    border-radius: 4px;
+    border: none;
+    color: var(--nav-element-color);
+    padding: 8px;
+    overflow: scroll;
+
+}
+
+footer .suggestion .input-div textarea:focus {
+    outline: none;
+}
+
+footer .suggestion .input-div input {
+    background-color: var(--input-bgc);
+    border: none;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    color: var(--nav-element-color);
+    padding: 6px;
+}
+
+footer .suggestion .input-div input:focus {
+    outline: none;
+}
+
+footer .suggestion .input-div label {
+    color: white;
+}
+
+footer .suggestion button {
+    background-color: var(--input-bgc);
+    color: var(--nav-element-color);
+    border: none;
+    width: fit-content;
+    padding: 12px 22px;
+    margin-top: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+footer .suggestion button:hover {
+    background-color: var(--form-bgc);
+    border: 1px solid white;
+}
+
+footer .suggestion button:active {
+    background-color: var(--nav-bgc);
+    transition: 0s;
+}
+
+footer .info {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+footer .info h2 {
+    color: var(--nav-element-color);
+    font-size: 2rem;
+}
+
+footer .info span {
+    color: var(--nav-element-color);
+    font-size: 1rem;
 }

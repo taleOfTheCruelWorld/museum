@@ -5,6 +5,8 @@
 
 header {
     position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 header nav {
@@ -92,4 +94,16 @@ header nav .menu .options a:hover {
     header nav .menu .options a {
         font-size: 2rem;
     }
+}
+
+header .bread {
+    font-size: 1rem;
+    color: black;
+    padding: 20px 10px;
+    display: block;
+    text-decoration: none;
+}
+
+header .bread:hover {
+    color: var(--nav-bgc)
 }
