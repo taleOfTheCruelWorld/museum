@@ -1,6 +1,14 @@
-
-.modal-banner {
+@font-face {
+    font-family:Inter;
+    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+*{
+    font-family:Inter;
+    color: white;
+}
+.modal-slider {
     display: none;
+    flex-flow: column nowrap;
     position:fixed; 
     z-index: 1; 
     left: 0;
@@ -9,9 +17,19 @@
     height: 100%; 
     overflow: auto; 
 }
-.modal-banner-content #close{
+.modal-slider-content #close{
     width: 80px;
     align-self: flex-end;
+    cursor: pointer;
+}
+.modal#cn{
+    display: flex;
+    align-self: flex-end;
+    flex-flow: row-reverse;
+    cursor: pointer;
+}
+.modal #close{
+    width: 90px;
 }
 @keyframes fall{
     from{
@@ -29,63 +47,76 @@
         margin-top: 0px;
     }
 }
-.modal-banner-content {
+.modal-slider-content {
     display: flex;
     flex-flow: wrap column;
-    row-gap: 60px;
+    row-gap: 30px;
     background-color: #553939;
-    margin: 20% auto;
+    margin:1% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 50%; 
-    color: white;
     border-radius: 20px;
 }
-.modal-banner-content #file-upload{
+.modal-slider-content .finputslider{
     z-index: -1;
-    display: none;
+    visibility: hidden;
 }
-.modal-banner-content #file-upload input[type="file"]{
+.modal-slider-content .finputslider input[type="file"]{
     z-index: -1;
-    display: none;
 }
-.modal-banner-content #upload, #cancel{
+.modal-slider-content #upload, #cancel{
     background-color: #805858;
     border: none;
     padding: 5px;
     border-radius:5px;
     padding: 10px 30px 10px 30px;
     border-radius:10px;
-    color: white;
+    cursor: pointer;
 }
-.modal-banner-content #ok{
+.modal-slider-content #ok{
     width: 40%;
     display: flex;
     flex-flow: nowrap row;
     justify-content: space-between;
     align-self: center;
 }
-.modal-banner-content #cn{
+.modal-slider-content #cn{
     display: flex;
     align-self: flex-end;
     flex-flow: row-reverse;
 }
-.modal-banner-content #upload-button{
-    border:10px solid #805858;
+.modal-slider-content #upload-button{
+    border:5px solid #805858;
     background-color: #805858;
+    cursor: pointer;
 }
-.modal-banner-content #br{
+.modal-slider-content #br{
     width: 92.5%;
     align-self: last baseline;
 }
-.modal-banner-content #nc{
+.modal-slider-content #nc{
     align-self: last baseline;
 }
-.modal-banner-content #preview{
+.modal-slider-content #preview{
     max-width: 85%;
     max-height: 85%;
     align-self:center;
 }
+.modal-slider-content #name{
+    border: none;
+    background-color: #805858;
+    border-radius:5px;
+    padding: 5px;
+}
 .pref{
     width: 80px;
+    cursor: pointer;
+}
+.sliderPlus{
+    align-self: center;
+}
+#plus{
+    width: 90px;
+    cursor: pointer;
 }

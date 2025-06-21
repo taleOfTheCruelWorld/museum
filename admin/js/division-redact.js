@@ -17,21 +17,21 @@ var divisionInput = document.querySelector("#file-upload.division");
 divisionInput.value = "";
 var divisionPreview = document.querySelector(".preview.division");
 
-function fall() {
-    modalDivision.style.animation = 'fall';
+function divisionFall() {
+    modalDivision.style.animation = 'divisionFall';
     modalDivision.style.animationDuration = '1s';
     setTimeout(() => { modalDivision.style.display = "none"; }, 1000);
 }
-divisionCloseCross.onclick = fall;
-divisionUploadButton.onclick = fall;
+divisionCloseCross.onclick = divisionFall;
+divisionUploadButton.onclick = divisionFall;
 window.onclick = function (event) {
     if (event.target == modalDivision) {
-        fall()
+        divisionFall()
     }
 }
-function prev() {
+function divisionPrev() {
     console.log(divisionInput.files[0]);
     divisionPreview.src = URL.createObjectURL(divisionInput.files[0]);
 }
 
-divisionInput.addEventListener("change", prev);
+divisionInput.addEventListener("change", divisionPrev);

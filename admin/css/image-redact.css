@@ -1,5 +1,5 @@
 
-.modal-division {
+.modal-image {
     display: none;
     position:fixed; 
     z-index: 1; 
@@ -9,7 +9,7 @@
     height: 100%; 
     overflow: auto; 
 }
-.modal-division-content #close{
+.modal-image-content #close{
     width: 80px;
     align-self: flex-end;
 }
@@ -29,7 +29,7 @@
         margin-top: 0px;
     }
 }
-.modal-division-content {
+.modal-image-content {
     display: flex;
     flex-flow: wrap column;
     row-gap: 20px;
@@ -41,21 +41,28 @@
     border-radius: 20px;
     color: white;
 }
-.modal-division-content #file-upload{
+.modal-image-content #file-upload{
     z-index: -1;
     display: none;
 }
-.modal-division-content #file-upload input[type="file"]{
+.modal-image-content #file-upload input[type="file"]{
     z-index: -1;
     display: none;
 }
-.modal-division-content #name{
+.modal-image-content select{
+    padding: 5px;
+    background-color: #805858; 
+    color: white;
+    border: none;
+}
+.modal-image-content .lines input{
     border: none;
     background-color: #805858;
+    color: white;
     border-radius:5px;
     padding: 5px;
 }
-.modal-division-content #upload, #cancel{
+.modal-image-content #upload, #cancel{
     background-color: #805858;
     border: none;
     color: white;
@@ -63,26 +70,30 @@
     padding: 10px 30px 10px 30px;
     border-radius:10px;
 }
-.modal-division-content #ok{
+.modal-image-content #ok{
+    width: 40%;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
     align-self: center;
 }
-.modal-division-content #cn{
+.modal-image-content #cn{
     display: flex;
     align-self: flex-end;
     flex-flow: row-reverse;
 }
-.modal-division-content #upload-button{
+.modal-image-content #upload-button{
     border:10px solid #805858;
     background-color: #805858;
 }
-.modal-division-content #br{
+.modal-image-content #br{
     width: 92.5%;
     align-self: last baseline;
 }
-.modal-division-content #nc{
+.modal-image-content .lines{
     align-self: last baseline;
 }
-.modal-division-content #preview{
+.modal-image-content #preview{
     max-width: 85%;
     max-height: 85%;
     align-self:center;
