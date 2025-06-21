@@ -1,6 +1,6 @@
 var modalBanner = document.getElementById("myModalBanner");
 var modalBannerContent = document.querySelector('.modal-banner-content');
-var bannerPref = document.getElementById("banner-pref");
+var bannerPref = document.getElementById("chronics-bunner");
 
 bannerPref.onclick = function () {
    modalBanner.style.display="block"; 

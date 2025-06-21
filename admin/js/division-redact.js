@@ -1,23 +1,26 @@
 var modalDivision = document.getElementById("myModalDivision");
 var modalDivisionContent = document.querySelector('.modal-division-content');
-var divisionPref = document.getElementById("division-pref");
+var divisionPref = Array.from(document.getElementsByClassName("division"));
 
-divisionPref.onclick = function () {
-   modalDivision.style.display="block"; 
-   modalDivision.style.animation='rise';
-   modalDivision.style.animationDuration='1s';
-}
+divisionPref.forEach(div => {
+    div.onclick = function () {
+        modalDivision.style.display = "block";
+        modalDivision.style.animation = 'rise';
+        modalDivision.style.animationDuration = '1s';
+    }
+})
+
 
 var divisionUploadButton = document.querySelector("#upload.division");
-var divisionCloseCross= document.querySelector("#close.division");
+var divisionCloseCross = document.querySelector("#close.division");
 var divisionInput = document.querySelector("#file-upload.division");
 divisionInput.value = "";
 var divisionPreview = document.querySelector(".preview.division");
 
-function fall (){
-    modalDivision.style.animation='fall';
-    modalDivision.style.animationDuration='1s';
-    setTimeout(() =>{modalDivision.style.display="none";}, 1000);
+function fall() {
+    modalDivision.style.animation = 'fall';
+    modalDivision.style.animationDuration = '1s';
+    setTimeout(() => { modalDivision.style.display = "none"; }, 1000);
 }
 divisionCloseCross.onclick = fall;
 divisionUploadButton.onclick = fall;
