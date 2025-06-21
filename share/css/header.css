@@ -63,7 +63,7 @@ header nav .menu .options.hidden {
 
 .icon-menu {
     color: var(--nav-element-color);
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 header nav .menu .options a {
@@ -92,16 +92,18 @@ header nav .menu .options a:hover {
     }
 
     header nav .menu .options a {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
 header .bread {
     font-size: 1rem;
-    color: black;
-    padding: 20px 10px;
+    color: var(--nav-element-color);
+    padding: 10px 10px;
     display: block;
     text-decoration: none;
+    background-color: rgba(0, 0, 0, .3);
+    width: fit-content;
 }
 
 header .bread:hover {
