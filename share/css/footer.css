@@ -61,7 +61,29 @@ footer .suggestion button {
     color: var(--nav-element-color);
     border: none;
     width: fit-content;
-    padding: 12px 22px;
+  oter .suggestion button:active {
+    background-color: var(--nav-bgc);
+    transition: 0s;
+}
+
+footer .info {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+footer .info h2 {
+    color: var(--nav-element-color);
+    font-size: 2rem;
+}
+
+footer .info span {
+    color: var(--nav-element-color);
+    font-size: 1rem;
+}
+.suggestion h1{
+    color: var(--nav-element-color);
+}  padding: 12px 22px;
     margin-top: 40px;
     border-radius: 6px;
     cursor: pointer;
