@@ -12,7 +12,7 @@ var sliderUploadButton = document.querySelectorAll("#upload.slider");
 var sliderCloseCross= document.querySelectorAll("#close.slider");
 var sliderCloseButton= document.querySelectorAll("#cancel.slider");
 var sliderInput = document.querySelectorAll(".finputslider");
-var sliderGlobalCross = document.querySelector("#cn.modal");
+var sliderGlobalCross = document.querySelector("#cn.modal-slid");
 console.log(sliderInput)
 sliderInput.forEach(element => {
     element.value="";

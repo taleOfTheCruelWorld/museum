@@ -1,34 +1,27 @@
-@font-face {
-    font-family:Inter;
-    src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
-}
-*{
-    font-family:Inter;
-    color: white;
-}
 .modal-slider {
     display: none;
     flex-flow: column nowrap;
     position:fixed; 
     z-index: 1; 
     left: 0;
-    top: 0;
+    top: 12vh;
     width: 100%; 
     height: 100%; 
     overflow: auto; 
+    color: white;
 }
 .modal-slider-content #close{
     width: 80px;
     align-self: flex-end;
     cursor: pointer;
 }
-.modal#cn{
+.modal-slid#cn{
     display: flex;
     align-self: flex-end;
     flex-flow: row-reverse;
     cursor: pointer;
 }
-.modal #close{
+.modal-slid #close{
     width: 90px;
 }
 @keyframes fall{
@@ -73,6 +66,7 @@
     padding: 10px 30px 10px 30px;
     border-radius:10px;
     cursor: pointer;
+    color: white;
 }
 .modal-slider-content #ok{
     width: 40%;
@@ -89,6 +83,7 @@
 .modal-slider-content #upload-button{
     border:5px solid #805858;
     background-color: #805858;
+    color: white;
     cursor: pointer;
 }
 .modal-slider-content #br{

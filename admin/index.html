@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../share/css/footer.css">
     <link href="css/banner-redact.css" rel="stylesheet">
     <link href="css/division-redact.css" rel="stylesheet">
+    <link href="css/slider-redact.css" rel="stylesheet">
+    <link href="css/literature-redact.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,6 +41,7 @@
     </header>
 
     <main>
+        <img src="img/preference.svg" id="slider-pref" class="pref">
         <div class="slider">
             <div class="slides">
                 <div class="slide">
@@ -57,7 +60,6 @@
             <button class="prev">&#10094;</button>
             <button class="next">&#10095;</button>
         </div>
-
         <p class="about" id="about"> С каждым годом все дальше уходят от нас события Великой Отечественной войны, самой
             жестокой и
             наиболее кровавой из всех войн. О войне можно говорить по-разному: скорбно и торжественно, с любопытством
@@ -81,7 +83,7 @@
             можете сообщить нам об этом по e-mail: bibliograf.2010@mail.ru или по этой ссылке.</p>
 
         <div class="infografica" id="infografica">
-            <h2>А ты знал?</h2>
+            <h2>А ты знал?<img src="img/preference.svg" id="banner-pref" class="pref"></h2>
             <img src="../img/slider/Starcraft II.jpg" alt="">
         </div>
         <div class="divisions" id="divisions">
@@ -113,9 +115,10 @@
                 <img src="../img/slider/space.jpg" alt="">
                 <span class="title">Категория</span>
             </a>
+            <img src="img/plus.svg" id="division-pref" class="bannerPref">
         </div>
         <div class="chronics" id="chronics">
-            <h2>Хроника военных лет</h2>
+            <h2>Хроника военных лет<img src="img/preference.svg" id="banner-pref" class="pref"></h2>
             <img src="../img/slider/diva.jpg" alt="" id='chronics-bunner'>
             <div class="years">
                 <div class="year">
@@ -144,15 +147,16 @@
             <a href="#">Книга</a>
             <a href="#">Сайт</a>
             <a href="#">Статья</a>
+            <img src="img/preference.svg" id="literature-pref" class="pref">
         </div>
         <a href="#" class="maps" id="maps">
             <img src="../img/slider/Starcraft II.jpg" alt="">
-            <h2>Пройтись по улицам абакана</h2>
+            <img src="img/preference.svg" id="banner-pref" class="pref">
+            <h2>Пройтись по улицам абакана </h2>
         </a>
 
 
 
-        <img src="img/preference.svg" id="division-pref" class="pref">
         <div id="myModalDivision" class="modal-division">
             <div class="modal-division-content">
                 <div id="cn">
@@ -175,7 +179,6 @@
 
 
 
-        <img src="img/preference.svg" id="banner-pref" class="pref">
         <div id="myModalBanner" class="modal-banner">
             <div class="modal-banner-content">
                 <div id="cn">
@@ -195,7 +198,111 @@
 
 
 
+        <div id="myModalSlider" class="modal-slider">
+            <div id="cn" class="modal-slid">
+                <img src="img/cross.svg" id="close"> 
+            </div>
+            <div class="modal-slider-content">
+                <div id="cn">
+                    <img src="img/cross.svg" id="close"class="slider"> 
+                </div>
+                    <img src="img/slider.svg" alt="not loaded" id="preview" class="slider">
+                <div id="br">
+                    <label id="upload-button" for="file-upload1">Выбрать изображение</label>
+                    <input type="file" accept="image/*" id="file-upload1" class="finputslider">
+                </div>
+                <div id="nc">
+                    <label for="name">Название</label>
+                    <input type="text" id="name" class="slider">
+                </div>
+                <div id="ok">
+                    <button id="upload"class="slider">Применить</button>
+                    <button id="cancel"class="slider">Отменить</button>
+                </div>
+            </div>
+            <div class="modal-slider-content">
+                <div id="cn">
+                    <img src="img/cross.svg" id="close"class="slider"> 
+                </div>
+                    <img src="img/slider.svg" alt="not loaded" id="preview" class="slider">
+                <div id="br">
+                    <label id="upload-button" for="file-upload2">Выбрать изображение</label>
+                    <input type="file" accept="image/*" id="file-upload2" class="finputslider">
+                </div>
+                <div id="nc">
+                    <label for="name">Название</label>
+                    <input type="text" id="name" class="slider">
+                </div>
+                <div id="ok">
+                    <button id="upload"class="slider">Применить</button>
+                    <button id="cancel"class="slider">Отменить</button>
+                </div>
+            </div>
+            <div class="sliderPlus">
+                <img src="img/plus.svg" id="plus"> 
+            </div>
+        </div>
 
+        <div id="myModalLiterature" class="modal-literature">
+            <div id="cn" class="modal-lit">
+                <img src="img/cross.svg" id="close"> 
+            </div>
+            <div class="modal-literature-content">
+                <div id="cn">
+                    <img src="img/cross.svg" id="close"class="literature"> 
+                 </div>
+                    <div>
+                        <label for="literatureText">Текст</label>
+                        <input type="text" id="literatureText" class="literature">
+                    </div>
+                    <div>
+                        <label for="literatureLink">Ссылка</label>
+                        <input type="text" id="literatureLink" class="literature">
+                    </div>
+                    <div id="ok">
+                        <button id="upload"class="literature">Применить</button>
+                        <button id="cancel"class="literature">Отменить</button>
+                    </div>
+                </div>
+            <div class="modal-literature-content">
+                <div id="cn">
+                    <img src="img/cross.svg" id="close"class="literature"> 
+                 </div>
+                    <div>
+                        <label for="literatureText">Текст</label>
+                        <input type="text" id="literatureText" class="literature">
+                    </div>
+                    <div>
+                        <label for="literatureLink">Ссылка</label>
+                        <input type="text" id="literatureLink" class="literature">
+                    </div>
+                    <div id="ok">
+                        <button id="upload"class="literature">Применить</button>
+                        <button id="cancel"class="literature">Отменить</button>
+                    </div>
+                </div>
+            <div class="modal-literature-content">
+                <div id="cn">
+                    <img src="img/cross.svg" id="close"class="literature"> 
+                 </div>
+                    <div>
+                        <label for="literatureText">Текст</label>
+                        <input type="text" id="literatureText" class="literature">
+                    </div>
+                    <div>
+                        <label for="literatureLink">Ссылка</label>
+                        <input type="text" id="literatureLink" class="literature">
+                    </div>
+                    <div id="ok">
+                        <button id="upload"class="literature">Применить</button>
+                        <button id="cancel"class="literature">Отменить</button>
+                    </div>
+                </div>
+                <div class="literaturePlus">
+                    <img src="img/plus.svg" id="plus"> 
+                </div>
+            </div>
+        </div>
 
 
 
@@ -240,6 +347,8 @@
     <script src="../share/js/navigationMenu.js"></script>
     <script src="js/division-redact.js"></script>
     <script src="js/banner-redact.js"></script>
+    <script src="js/slider-redact.js"></script>
+    <script src="js/literature-redact.js"></script>
 </body>
 
 </html>

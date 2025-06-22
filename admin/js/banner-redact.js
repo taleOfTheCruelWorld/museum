@@ -1,10 +1,16 @@
 var modalBanner = document.getElementById("myModalBanner");
 var modalBannerContent = document.querySelector('.modal-banner-content');
-var bannerPref = document.getElementById("banner-pref");
+var bannerPref = document.querySelectorAll("#banner-pref");
 
-bannerPref.onclick = function () {
-   modalBanner.style.display="block"; 
-}
+
+ bannerPref.forEach(bpf => {
+    bpf.onclick = function () {
+    modalBanner.style.display="block"; 
+    modalBanner.style.display= "block";
+    modalBanner.style.animation = 'rise';
+    modalBanner.style.animationDuration = '1s';
+    }
+ });   
 
 var bannerUploadButton = document.querySelector("#upload.banner");
 var bannerCloseCross= document.querySelector("#close.banner");

@@ -11,7 +11,7 @@ literaturePref.onclick = function () {
 var literatureUploadButton = document.querySelectorAll("#upload.literature");
 var literatureCloseCross= document.querySelectorAll("#close.literature");
 var literatureCloseButton= document.querySelectorAll("#cancel.literature");
-var literatureGlobalCross = document.querySelector("#cn.modal");
+var literatureGlobalCross = document.querySelector("#cn.modal-lit");
 var literatureModals = document.querySelectorAll(".modal-literature-content")
 
 function literatureFall (){

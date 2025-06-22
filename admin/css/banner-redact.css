@@ -14,7 +14,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    margin: auto;
+    overflow: auto;
 }
 
 .modal-banner-content #close {
@@ -88,6 +88,7 @@
     align-self: center;
 }
 
-.pref {
-    width: 80px;
+#banner-pref {
+    width: 30px;
+    filter: none;
 }

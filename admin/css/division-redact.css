@@ -87,6 +87,6 @@
     max-height: 85%;
     align-self:center;
 }
-.pref{
-    width: 80px;
+#division-pref{
+    cursor: pointer;
 }
