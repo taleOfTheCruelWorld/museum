@@ -16,17 +16,17 @@ var imageSize= document.querySelector("#imageSize");
 imageInput.value = "";
 var imagePreview = document.querySelector("#preview.image");
 imagePreview.style.width= "80%"; 
-function fall (){
+function imageFall (){
     modalImage.style.animation='fall';
     modalImage.style.animationDuration='1s';
     setTimeout(() =>{modalImage.style.display="none";}, 1000);
 }
-imageCloseCross.onclick = fall;
-imageUploadButton.onclick = fall;
-imageCloseButton.onclick = fall;
+imageCloseCross.onclick = imageFall;
+imageUploadButton.onclick = imageFall;
+imageCloseButton.onclick = imageFall;
 window.onclick = function (event) {
     if (event.target == modalImage) {
-        fall()
+        imageFall()
     }
 }
 function imagePrev() {

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="css/block-add.css" rel="stylesheet">
+    </head>
+    <body> 
+        <img src="img/plus.svg" id="block-pref" class="pref">
+        <div id="myModalBlock" class="modal-block">
+            <div class="modal-block-content">
+                <div id="cn">
+                    <img src="img/cross.svg" id="close" class="block">
+                </div>
+                <div  class="lines">
+                    <label for="blockType">Тип блока</label> 
+                    <select id="blockType">
+                        <option value="text">Текст</option>
+                        <option value="table">Таблица</option>
+                        <option value="image">Изображение</option>
+                    </select>
+                </div>
+                <div id="ok">
+                    <button id="upload" class="block">Создать</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/block-add.js"></script>
+</html>
