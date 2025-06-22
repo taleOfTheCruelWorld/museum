@@ -32,14 +32,13 @@
     border: 1px solid #888;
     width: 50%;
     border-radius: 20px;
+    color: white;
 }
-
-.modal-division-content #file-upload-division {
+.modal-division-content .fdivisioninput{
     z-index: -1;
     display: none;
 }
-
-.modal-division-content #file-upload-division input[type="file"] {
+.modal-division-content .fdivisioninput input[type="file"]{
     z-index: -1;
     display: none;
 }
@@ -55,7 +54,8 @@
 #cancel {
     background-color: #805858;
     border: none;
-    border-radius: 5px;
+    color: white;
+    border-radius:5px;
     padding: 10px 30px 10px 30px;
     border-radius: 10px;
 }

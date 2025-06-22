@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="css/image-redact.css" rel="stylesheet">
+    </head>
+    <body> 
+        <img src="img/preference.svg" id="image-pref" class="pref">
+        <div id="myModalImage" class="modal-image">
+            <div class="modal-image-content">
+                <div id="cn">
+                    <img src="img/cross.svg" id="close" class="image">
+                </div>
+                <img src="img/image.svg" alt="not loaded" id="preview" class="image">
+                <div id="br">
+                    <label id="upload-button" for="image-redact-file-upload">Выбрать изображение</label>
+                    <input type="file" accept="image/*" id="image-redact-file-upload" class="image">
+                </div>
+                <div  class="lines">
+                    <label for="name">Подпись</label> 
+                    <input type="text" id="name">
+                </div>
+                <div  class="lines">
+                    <label for="imageSize">Размер изображения</label> 
+                    <select id="imageSize">
+                        <option value="1/1">1/1</option>
+                        <option value="1/2">1/2</option>
+                        <option value="1/4">1/4</option>
+                    </select>
+                </div>
+                <div  class="lines">
+                    <label for="downMargin">Отступ снизу</label> 
+                    <input type="number" id="downMargin" value="0">
+                </div>
+                <div  class="lines">
+                    <label for="topMargin">Отступ сверху</label> 
+                    <input type="number" id="topMargin" value="0">
+                </div>
+                <div id="ok">
+                    <button id="upload" class="image">Применить</button>
+                    <button id="cancel" class="image">Отменить</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/image-redact.js"></script>
+</html>
