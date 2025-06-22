@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="css/table-redact.css" rel="stylesheet">
+    </head>
+    <body>
+        <img src="img/preference.svg" id="table-redact-pref" class="pref">
+        <div id="myModalTableRedact" class="modal-table-redact">
+            <div class="modal-table-redact-content">
+                <div id="cn">
+                    <img src="img/cross.svg" id="close"class="table-redact"> 
+                 </div>
+                    <table>
+                        <th><tr><td colspan="3"></td></tr></th>
+                        <tr><td rowspan="2"></td><td colspan="2"></td></tr>
+                        <tr><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td></tr>
+                    </table>
+                    <div>
+                        <label for="table-downMargin">Отступ снизу</label>
+                        <input type="number" id="table-downMargin" class="table-redact">
+                    </div>
+                    <div>
+                        <label for="table-topMargin">Отступ сверху</label>
+                        <input type="number" id="table-topMargin" class="table-redact">
+                    </div>
+                    <div>
+                        <label for="table-widthBorder">Толщина границы</label>
+                        <input type="number" id="table-widthBorder" class="table-redact">
+                    </div>
+                    <div id="ok">
+                        <button id="upload"class="table-redact">Применить</button>
+                        <button id="cancel"class="table-redact">Отменить</button>
+                    </div>
+                </div>
+        </div>
+
+
+    </body>
+    <script src="js/table-redact.js"></script>
+</html>
