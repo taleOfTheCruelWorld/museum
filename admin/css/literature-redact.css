@@ -91,12 +91,12 @@
 .modal-literature-content #nc{
     align-self: last baseline;
 }
-.modal-literature-content #name{
+.modal-literature-content input{
     border: none;
     background-color: #805858;
     border-radius:5px;
     padding: 5px;
-    width: 90%;
+    width: 70%;
 }
 .pref{
     width: 80px;
