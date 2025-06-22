@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="css/table-create.css" rel="stylesheet">
+    </head>
+    <body> 
+        <img src="img/plus.svg" id="table-pref" class="pref">
+        <div id="myModalTable" class="modal-table">
+            <div class="modal-table-content">
+                <div id="cn">
+                    <img src="img/cross.svg" id="close" class="table">
+                </div>
+                <div  class="lines">
+                    <label for="numOfCol">Количество столбцов</label> 
+                    <input type="number" id="numOfCol" value="0">
+                </div>
+                <div  class="lines">
+                    <label for="numOfRow">Количество строк</label> 
+                    <input type="number" id="numOfRow" value="0">
+                </div>
+                <div id="ok">
+                    <button id="upload" class="table">Создать</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/table-create.js"></script>
+</html>
