@@ -4,15 +4,13 @@ var literaturePref = document.getElementById("literature-pref");
 
 literaturePref.onclick = function () {
    modalLiterature.style.display="flex"; 
-   modalLiterature.style.animation='rise';
-   modalLiterature.style.animationDuration='1s';
 }
 
-var literatureUploadButton = document.querySelectorAll("#upload.literature");
-var literatureCloseCross= document.querySelectorAll("#close.literature");
-var literatureCloseButton= document.querySelectorAll("#cancel.literature");
+var literatureUploadButton = document.querySelectorAll("#upload.literatures");
+var literatureCloseCross= document.querySelectorAll("#close.literatures");
+var literatureCloseButton= document.querySelectorAll("#cancel.literatures");
 var literatureGlobalCross = document.querySelector("#cn.modal-lit");
-var literatureModals = document.querySelectorAll(".modal-literature-content")
+var literatureModals = document.querySelectorAll(".modal-literatures-content")
 
 function literatureFall (){
     modalLiterature.style.animation='fall';

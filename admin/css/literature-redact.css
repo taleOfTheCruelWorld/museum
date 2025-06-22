@@ -3,7 +3,7 @@
     display: none;
     flex-flow: column nowrap;
     position:fixed; 
-    z-index: 3; 
+    z-index: 1; 
     left: 0;
     top: 12vh;
     width: 100%; 
@@ -43,7 +43,7 @@
 .modal-literature-content {
     display: flex;
     flex-flow: wrap column;
-    row-gap:10px;
+    row-gap:30px;
     background-color: #553939;
     margin:1% auto;
     padding: 20px;
@@ -63,16 +63,17 @@
     color: white;
 }
 .modal-literature-content #ok{
+    width: 40%;
     display: flex;
-    gap: 20px;
-    flex-flow: wrap row;
-    justify-content: center;
+    flex-flow: nowrap row;
+    justify-content: space-between;
     align-self: center;
 }
 .modal-literature-content #cn{
     display: flex;
     align-self: flex-end;
     flex-flow: row-reverse;
+    height: 40px;
 }
 .modal-literature-content #upload-button{
     border:5px solid #805858;
@@ -95,6 +96,7 @@
 }
 #literature-pref{
     width: 40px;
+    height: 40px;
     cursor: pointer;
 }
 .literaturePlus{

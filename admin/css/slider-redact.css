@@ -123,12 +123,12 @@
     padding: 5px;
 }
 
-.pref {
+#slider-pref {
     width: 80px;
     cursor: pointer;
 }
 
-.sliderPlus {
+.modal-slider .sliderPlus {
     align-self: center;
 }
 
