@@ -41,11 +41,11 @@
     color: white;
     border-radius: 20px;
 }
-.modal-banner-content #file-upload{
+.modal-banner-content .fbannerinput{
     z-index: -1;
     display: none;
 }
-.modal-banner-content #file-upload input[type="file"]{
+.modal-banner-content .fbannerinput input[type="file"]{
     z-index: -1;
     display: none;
 }

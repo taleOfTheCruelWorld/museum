@@ -41,11 +41,11 @@
     border-radius: 20px;
     color: white;
 }
-.modal-division-content #file-upload{
+.modal-division-content .fdivisioninput{
     z-index: -1;
     display: none;
 }
-.modal-division-content #file-upload input[type="file"]{
+.modal-division-content .fdivisioninput input[type="file"]{
     z-index: -1;
     display: none;
 }

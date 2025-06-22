@@ -11,21 +11,21 @@ bannerPref.onclick = function () {
 var bannerUploadButton = document.querySelector("#upload.banner");
 var bannerCloseCross= document.querySelector("#close.banner");
 var bannerCloseButton= document.querySelector("#cancel.banner");
-var bannerInput = document.querySelector("#file-upload.banner");
+var bannerInput = document.querySelector(".fbannerinput");
 bannerInput.value = "";
 var bannerPreview = document.querySelector("#preview.banner");
 
-function fall (){
+function bannerFall (){
     modalBanner.style.animation='fall';
     modalBanner.style.animationDuration='1s';
     setTimeout(() =>{modalBanner.style.display="none";}, 1000);
 }
-bannerCloseCross.onclick = fall;
-bannerUploadButton.onclick = fall;
-bannerCloseButton.onclick = fall;
+bannerCloseCross.onclick = bannerFall;
+bannerUploadButton.onclick = bannerFall;
+bannerCloseButton.onclick = bannerFall;
 window.onclick = function (event) {
     if (event.target == modalBanner) {
-        fall()
+        bannerFall()
     }
 }
 function prev() {
