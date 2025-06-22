@@ -93,3 +93,6 @@ footer .info span {
     color: var(--nav-element-color);
     font-size: 1rem;
 }
+.suggestion h1{
+    color: var(--nav-element-color);
+}
