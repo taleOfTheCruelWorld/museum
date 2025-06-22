@@ -1,16 +1,16 @@
-
 .modal-block {
     display: none;
-    position:absolute; 
-    z-index: 1; 
+    position: absolute;
+    z-index: 1;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-  
+
 }
-.modal-block-content #close{
+
+.modal-block-content #close {
     width: 40px;
     align-self: flex-end;
 }
@@ -21,48 +21,57 @@
     row-gap: 20px;
     background-color: #553939;
     margin: 20% auto;
-    padding: 20px;
+    padding: 20px 40px;
     border: 1px solid #888;
-    width: 50%; 
+    width: fit-content;
     border-radius: 20px;
     color: white;
 }
-.modal-block-content select{
+
+.modal-block-content select {
     padding: 5px;
-    background-color: #805858; 
+    background-color: #805858;
     color: white;
     border: none;
 }
-.modal-block-content .lines input{
+
+.modal-block-content .lines input {
     border: none;
     background-color: #805858;
     color: white;
-    border-radius:5px;
+    border-radius: 5px;
     padding: 5px;
 }
-.modal-block-content #upload, #cancel{
+
+.modal-block-content #upload,
+#cancel {
     background-color: #805858;
     border: none;
     color: white;
-    border-radius:5px;
+    border-radius: 5px;
     padding: 10px 30px 10px 30px;
-    border-radius:10px;
+    border-radius: 10px;
 }
-.modal-block-content #ok{
+
+.modal-block-content #ok {
     align-self: center;
 }
-.modal-block-content #cn{
+
+.modal-block-content #cn {
     display: flex;
     align-self: flex-end;
 }
-.modal-block-content #upload-button{
-    border:10px solid #805858;
+
+.modal-block-content #upload-button {
+    border: 10px solid #805858;
     background-color: #805858;
 }
-.modal-block-content .lines{
+
+.modal-block-content .lines {
     align-self: center;
-    position: absolute;
+
 }
-.pref{
+
+.pref {
     width: 80px;
 }
