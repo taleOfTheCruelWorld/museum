@@ -1,27 +1,34 @@
-:root {
-    --nav-element-color: #D9D9D9;
-    --nav-bgc: #222222;
-    --body-bgc: #EDEEF0;
-    --form-bgc: #553939;
-    --input-bgc: #805858;
-}
 
 .modal-division {
     display: none;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    position:fixed; 
+    z-index: 1; 
     left: 0;
-    margin: auto;
-    z-index: 3;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
 }
-
-.modal-division-content #close {
+.modal-division-content #close{
     width: 80px;
     align-self: flex-end;
 }
-
+@keyframes fall{
+    from{
+        margin-top: 0px;
+    }
+    to{
+        margin-top: 1200px;
+    }
+}
+@keyframes rise{
+    from{
+        margin-top: 1200px;
+    }
+    to{
+        margin-top: 0px;
+    }
+}
 .modal-division-content {
     display: flex;
     flex-flow: wrap column;
@@ -30,7 +37,7 @@
     margin: 20% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
+    width: 50%; 
     border-radius: 20px;
     color: white;
 }
@@ -42,54 +49,44 @@
     z-index: -1;
     display: none;
 }
-
-.modal-division-content #name {
+.modal-division-content #name{
     border: none;
     background-color: #805858;
-    border-radius: 5px;
+    border-radius:5px;
     padding: 5px;
 }
-
-.modal-division-content #upload,
-#cancel {
+.modal-division-content #upload, #cancel{
     background-color: #805858;
     border: none;
     color: white;
     border-radius:5px;
     padding: 10px 30px 10px 30px;
-    border-radius: 10px;
+    border-radius:10px;
 }
-
-.modal-division-content #ok {
+.modal-division-content #ok{
     align-self: center;
 }
-
-.modal-division-content #cn {
+.modal-division-content #cn{
     display: flex;
     align-self: flex-end;
     flex-flow: row-reverse;
 }
-
-.modal-division-content #upload-button {
-    border: 10px solid #805858;
+.modal-division-content #upload-button{
+    border:10px solid #805858;
     background-color: #805858;
 }
-
-.modal-division-content #br {
+.modal-division-content #br{
     width: 92.5%;
     align-self: last baseline;
 }
-
-.modal-division-content #nc {
+.modal-division-content #nc{
     align-self: last baseline;
 }
-
-.modal-division-content #preview {
+.modal-division-content #preview{
     max-width: 85%;
     max-height: 85%;
-    align-self: center;
+    align-self:center;
 }
-
-.pref {
+.pref{
     width: 80px;
 }

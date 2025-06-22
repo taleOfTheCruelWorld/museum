@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link href="css/literature-redact.css" rel="stylesheet">
+    </head>
+    <body>
+        <img src="img/preference.svg" id="literature-pref" class="pref">
+        <div id="myModalLiterature" class="modal-literature">
+            <div id="cn" class="modal">
+                <img src="img/cross.svg" id="close"> 
+            </div>
+            <div class="modal-literature-content">
+                <div id="cn">
+                    <img src="img/cross.svg" id="close"class="literature"> 
+                 </div>
+                    <div>
+                        <label for="literatureText">Текст</label>
+                        <input type="text" id="literatureText" class="literature">
+                    </div>
+                    <div>
+                        <label for="literatureLink">Ссылка</label>
+                        <input type="text" id="literatureLink" class="literature">
+                    </div>
+                    <div id="ok">
+                        <button id="upload"class="literature">Применить</button>
+                        <button id="cancel"class="literature">Отменить</button>
+                    </div>
+                </div>
+                <div class="literaturePlus">
+                    <img src="img/plus.svg" id="plus"> 
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+    <script src="js/literature-redact.js"></script>
+</html>
