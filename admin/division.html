@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Раздел</title>
     <link rel="stylesheet" href="css/division.css">
+    <link rel="stylesheet" href="../share/icons/fontello/css/fontello.css">
     <link rel="stylesheet" href="../share/css/font_Inter.css">
     <link rel="stylesheet" href="../share/css/footer.css">
     <link rel="stylesheet" href="../share/css/header.css">
+    <link href="css/contact-redact.css" rel="stylesheet">
+    <link href="css/block-add.css" rel="stylesheet">
+    <link href="css/image-redact.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
             <a href="../admin/index.html" class="logo">
-                <img src="../img/sc2logo.png" alt="">
+                <img src="../img/logo.svg" alt="">
             </a>
             <div class="menu">
                 <button class="nav-open-button" type="button" id="nav-open-button">
@@ -52,26 +56,148 @@
                 В этом разделе собран материал о героях Великой Отечественной войны, имена которых носят улицы нашего
             города, памятных местах, увековечивающих их имена.</p>
         <div class="img-div by1">
-            <img src="../img/slider/space.jpg" alt="" class="">
+            <img src="../img/city.svg" alt="" class="">
+            <img src="img/preference.svg" class="image-pref" >
             <span></span>
         </div>
         <div class="img-div by4">
-            <img src="../img/slider/space.jpg" alt="" class="">
+            <img src="../img/persons/domojakovME.svg" alt="" class="">
             <span>Доможаков Михаил Егорович (1915 – 1993 гг.)</span>
+            <img src="img/preference.svg" class="image-pref" >
         </div>
         <div class="img-div by4">
-            <img src="../img/slider/space.jpg" alt="" class="">
+            <img src="../img/persons/kilchakovME.svg" alt="" class="">
             <span>Кильчичаков Михаил Еремеевич (1919 – 1990 гг.)</span>
+            <img src="img/preference.svg" class="image-pref" >
         </div>
         <div class="img-div by4">
-            <img src="../img/slider/space.jpg" alt="" class="">
+            <img src="../img/persons/popovPF.svg" alt="" class="">
             <span>Попов Павел Фомич (1906-1944 гг.)</span>
+            <img src="img/preference.svg" class="image-pref" >
         </div>
         <div class="img-div by4">
-            <img src="../img/slider/space.jpg" alt="" class="">
+            <img src="../img/persons/ugujakovVA.svg" alt="" class="">
             <span>Угужаков Василий Архипович (1925-1999 гг.)</span>
+            <img src="img/preference.svg" class="image-pref" >
+        </div>
+        <div>
+            <img src="img/plus.svg" id="block-pref" class="pref">
         </div>
 
+        <div id="myModalContact" class="modal-contact">
+            <div id="cn" class="modal">
+                <img src="img/cross.svg" id="close"> 
+            </div>
+            <div class="modal-contact-content">
+                <div id="cn">
+                    <img src="img/cross.svg" id="close"class="contact"> 
+                 </div>
+                    <div>
+                        <label for="isLink">Является ссылкой</label>
+                        <input type="checkbox" id="isLink" class="contact">
+                    </div>
+                    <div>
+                        <label for="name">Текст</label>
+                        <input type="text" id="name" class="contact">
+                    </div>
+                    <div id="ok">
+                        <button id="upload"class="contact">Применить</button>
+                        <button id="cancel"class="contact">Отменить</button>
+                    </div>
+                </div>
+            <div class="modal-contact-content">
+                <div id="cn">
+                    <img src="img/cross.svg" id="close"class="contact"> 
+                 </div>
+                    <div >
+                        <label for="isLink">Является ссылкой</label>
+                        <input type="checkbox" id="isLink" class="contact">
+                    </div>
+                    <div>
+                        <label for="name">Текст</label>
+                        <input type="text" id="name" class="contact">
+                    </div>
+                    <div id="ok">
+                        <button id="upload"class="contact">Применить</button>
+                        <button id="cancel"class="contact">Отменить</button>
+                    </div>
+                </div>
+            <div class="modal-contact-content">
+                <div id="cn">
+                    <img src="img/cross.svg" id="close"class="contact"> 
+                 </div>
+                    <div >
+                        <label for="isLink">Является ссылкой</label>
+                        <input type="checkbox" id="isLink" class="contact">
+                    </div>
+                    <div>
+                        <label for="name">Текст</label>
+                        <input type="text" id="name" class="contact">
+                    </div>
+                    <div id="ok">
+                        <button id="upload"class="contact">Применить</button>
+                        <button id="cancel"class="contact">Отменить</button>
+                    </div>
+                </div>
+                <div class="contactPlus">
+                    <img src="img/plus.svg" id="contact-plus"> 
+                </div>
+            </div>
+
+        <div id="myModalBlock" class="modal-block">
+            <div class="modal-block-content">
+                <div id="cn">
+                    <img src="img/cross.svg" id="close" class="block">
+                </div>
+                <div  class="lines">
+                    <label for="blockType">Тип блока</label> 
+                    <select id="blockType">
+                        <option value="text">Текст</option>
+                        <option value="table">Таблица</option>
+                        <option value="image">Изображение</option>
+                    </select>
+                </div>
+                <div id="ok">
+                    <button id="upload" class="block">Создать</button>
+                </div>
+            </div>
+        </div>
+        <div id="myModalImage" class="modal-image">
+            <div class="modal-image-content">
+                <div id="cn">
+                    <img src="img/cross.svg" id="close" class="image">
+                </div>
+                <img src="img/image.svg" alt="not loaded" id="preview" class="image">
+                <div id="br">
+                    <label id="upload-button" for="image-redact-file-upload">Выбрать изображение</label>
+                    <input type="file" accept="image/*" id="image-redact-file-upload" class="image">
+                </div>
+                <div  class="lines">
+                    <label for="name">Подпись</label> 
+                    <input type="text" id="name">
+                </div>
+                <div  class="lines">
+                    <label for="imageSize">Размер изображения</label> 
+                    <select id="imageSize">
+                        <option value="1/1">1/1</option>
+                        <option value="1/2">1/2</option>
+                        <option value="1/4">1/4</option>
+                    </select>
+                </div>
+                <div  class="lines">
+                    <label for="downMargin">Отступ снизу</label> 
+                    <input type="number" id="downMargin" value="0">
+                </div>
+                <div  class="lines">
+                    <label for="topMargin">Отступ сверху</label> 
+                    <input type="number" id="topMargin" value="0">
+                </div>
+                <div id="ok">
+                    <button id="upload" class="image">Применить</button>
+                    <button id="cancel" class="image">Отменить</button>
+                </div>
+            </div>
+        </div>
     </main>
 
 
@@ -104,8 +230,13 @@
             <span>8-800-555-35-35</span>
             <span>pochta@mail.ru</span>
             <span>https://vk.com/nashpublic</span>
+            <img src="img/preference.svg" id="contact-pref" class="pref">
         </div>
     </footer>
+    <script src="../share/js/navigationMenu.js"></script>
+    <script src="js/contact-redact.js"></script>
+    <script src="js/block-add.js"></script>
+    <script src="js/image-redact.js"></script>
 </body>
 
 </html>

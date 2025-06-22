@@ -1,12 +1,14 @@
 var modalImage = document.getElementById("myModalImage");
 var modalImageContent = document.querySelector('.modal-image-content');
-var imagePref = document.getElementById("image-pref");
+var imagePref = document.querySelectorAll(".image-pref");
 
-imagePref.onclick = function () {
+imagePref.forEach(pref => {
+    pref.onclick = function () {
    modalImage.style.display="block"; 
    modalImage.style.animation='rise';
    modalImage.style.animationDuration='1s';
 }
+});
 
 var imageUploadButton = document.querySelector("#upload.image");
 var imageCloseCross= document.querySelector("#close.image");

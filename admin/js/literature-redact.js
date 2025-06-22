@@ -9,8 +9,7 @@ literaturePref.onclick = function () {
 var literatureUploadButton = document.querySelectorAll("#upload.literatures");
 var literatureCloseCross= document.querySelectorAll("#close.literatures");
 var literatureCloseButton= document.querySelectorAll("#cancel.literatures");
-var literatureGlobalCross = document.querySelector("#cn.modal-lit");
-var literatureModals = document.querySelectorAll(".modal-literatures-content")
+var literatureModals = document.querySelectorAll(".modal-literature-content")
 
 function literatureFall (){
     modalLiterature.style.animation='fall';
@@ -29,5 +28,4 @@ for (let modals = 0; modals < literatureModals.length; modals++) {
     console.log(literatureModals[modals]);
     literatureCloseCross[modals].onclick = function() {winClose(modals);}
 }
-literatureGlobalCross.onclick = literatureFall;
     

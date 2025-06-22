@@ -4,7 +4,7 @@
     position: fixed;
     z-index: 3;
     left: 0;
-    top: 12vh;
+    top: 0;
     height: 100%;
     overflow: scroll;
     color: white;
@@ -21,6 +21,7 @@
     align-self: flex-end;
     flex-flow: row-reverse;
     cursor: pointer;
+    visibility:hidden;
 }
 
 .modal-slid #close {
