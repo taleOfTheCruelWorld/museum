@@ -5,22 +5,18 @@ var divisionPref = Array.from(document.getElementsByClassName("division"));
 divisionPref.forEach(div => {
     div.onclick = function () {
         modalDivision.style.display = "block";
-        modalDivision.style.animation = 'rise';
-        modalDivision.style.animationDuration = '1s';
     }
 })
 
 
 var divisionUploadButton = document.querySelector("#upload.division");
 var divisionCloseCross = document.querySelector("#close.division");
-var divisionInput = document.querySelector("#file-upload.division");
+var divisionInput = document.querySelector("#file-upload-division");
 divisionInput.value = "";
 var divisionPreview = document.querySelector(".preview.division");
 
 function fall() {
-    modalDivision.style.animation = 'fall';
-    modalDivision.style.animationDuration = '1s';
-    setTimeout(() => { modalDivision.style.display = "none"; }, 1000);
+    modalDivision.style.display = 'none';
 }
 divisionCloseCross.onclick = fall;
 divisionUploadButton.onclick = fall;
@@ -30,7 +26,6 @@ window.onclick = function (event) {
     }
 }
 function prev() {
-    console.log(divisionInput.files[0]);
     divisionPreview.src = URL.createObjectURL(divisionInput.files[0]);
 }
 
