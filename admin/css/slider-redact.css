@@ -1,117 +1,138 @@
 .modal-slider {
     display: none;
     flex-flow: column nowrap;
-    position:fixed; 
-    z-index: 1; 
+    position: fixed;
+    z-index: 3;
     left: 0;
     top: 12vh;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
+    height: 100%;
+    overflow: scroll;
     color: white;
 }
-.modal-slider-content #close{
+
+.modal-slider-content #close {
     width: 80px;
     align-self: flex-end;
     cursor: pointer;
 }
-.modal-slid#cn{
+
+.modal-slid#cn {
     display: flex;
     align-self: flex-end;
     flex-flow: row-reverse;
     cursor: pointer;
 }
-.modal-slid #close{
+
+.modal-slid #close {
     width: 90px;
 }
-@keyframes fall{
-    from{
+
+@keyframes fall {
+    from {
         margin-top: 0px;
     }
-    to{
+
+    to {
         margin-top: 1200px;
     }
 }
-@keyframes rise{
-    from{
+
+@keyframes rise {
+    from {
         margin-top: 1200px;
     }
-    to{
+
+    to {
         margin-top: 0px;
     }
 }
+
 .modal-slider-content {
     display: flex;
     flex-flow: wrap column;
     row-gap: 30px;
     background-color: #553939;
-    margin:1% auto;
+    margin: 1% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%; 
+    width: 50%;
     border-radius: 20px;
 }
-.modal-slider-content .finputslider{
+
+.modal-slider-content .finputslider {
     z-index: -1;
     visibility: hidden;
 }
-.modal-slider-content .finputslider input[type="file"]{
+
+.modal-slider-content .finputslider input[type="file"] {
     z-index: -1;
 }
-.modal-slider-content #upload, #cancel{
+
+.modal-slider-content #upload,
+#cancel {
     background-color: #805858;
     border: none;
     padding: 5px;
-    border-radius:5px;
+    border-radius: 5px;
     padding: 10px 30px 10px 30px;
-    border-radius:10px;
+    border-radius: 10px;
     cursor: pointer;
     color: white;
 }
-.modal-slider-content #ok{
-    width: 40%;
+
+.modal-slider-content #ok {
+    gap: 20px;
     display: flex;
-    flex-flow: nowrap row;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: center;
     align-self: center;
 }
-.modal-slider-content #cn{
+
+.modal-slider-content #cn {
     display: flex;
     align-self: flex-end;
     flex-flow: row-reverse;
 }
-.modal-slider-content #upload-button{
-    border:5px solid #805858;
+
+.modal-slider-content #upload-button {
+    border: 5px solid #805858;
     background-color: #805858;
     color: white;
     cursor: pointer;
 }
-.modal-slider-content #br{
+
+.modal-slider-content #br {
     width: 92.5%;
     align-self: last baseline;
 }
-.modal-slider-content #nc{
+
+.modal-slider-content #nc {
     align-self: last baseline;
 }
-.modal-slider-content #preview{
+
+.modal-slider-content #preview {
     max-width: 85%;
     max-height: 85%;
-    align-self:center;
+    align-self: center;
 }
-.modal-slider-content #name{
+
+.modal-slider-content #name {
     border: none;
     background-color: #805858;
-    border-radius:5px;
+    border-radius: 5px;
     padding: 5px;
 }
-.pref{
+
+.pref {
     width: 80px;
     cursor: pointer;
 }
-.sliderPlus{
+
+.sliderPlus {
     align-self: center;
 }
-#plus{
+
+#plus {
     width: 90px;
     cursor: pointer;
 }

@@ -12,7 +12,7 @@
     z-index: 3;
     left: 0;
     right: 0;
-    top: 0;
+    top: 12vh;
     bottom: 0;
     overflow: auto;
 }
@@ -55,10 +55,11 @@
 }
 
 .modal-banner-content #ok {
-    width: 40%;
+    
     display: flex;
-    flex-flow: nowrap row;
-    justify-content: space-between;
+    gap: 20px;
+    flex-flow: wrap row;
+    justify-content: center;
     align-self: center;
 }
 
