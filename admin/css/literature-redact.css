@@ -52,10 +52,9 @@
     border-radius: 20px;
     color: white;
 }
-.modal-literature-content #upload, #cancel{
+.modal-literature-content #upload,#cancel{
     background-color: #805858;
     border: none;
-    padding: 5px;
     border-radius:5px;
     padding: 10px 30px 10px 30px;
     border-radius:10px;
@@ -63,11 +62,12 @@
     color: white;
 }
 .modal-literature-content #ok{
-    width: 40%;
-    display: flex;
-    flex-flow: nowrap row;
-    justify-content: space-between;
     align-self: center;
+    width:fit-content;
+    gap: 10px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
 }
 .modal-literature-content #cn{
     display: flex;
