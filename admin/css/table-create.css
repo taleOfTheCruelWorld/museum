@@ -1,34 +1,22 @@
 
 .modal-table {
     display: none;
-    position:fixed; 
+    position:absolute; 
     z-index: 1; 
     left: 0;
     top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     width: 100%; 
     height: 100%; 
-    overflow: auto; 
+    
 }
 .modal-table-content #close{
     width: 40px;
     align-self: flex-end;
 }
-@keyframes fall{
-    from{
-        margin-top: 0px;
-    }
-    to{
-        margin-top: 1200px;
-    }
-}
-@keyframes rise{
-    from{
-        margin-top: 1200px;
-    }
-    to{
-        margin-top: 0px;
-    }
-}
+
 .modal-table-content {
     display: flex;
     flex-flow: wrap column;
